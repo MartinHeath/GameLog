@@ -27,28 +27,28 @@ var watch = require('gulp-watch');
 var production = process.env.NODE_ENV === 'production';
 
 var config = {
-  source: './src',
+  source: './resources',
   destination: './public',
   scripts: {
-    source: './src/main.js',
+    source: './resources/main.js',
     destination: './public/js/',
     extensions: ['.jsx'],
     filename: 'bundle.js'
   },
   templates: {
-    source: './src/*.jade',
-    watch: './src/*.jade',
+    source: './resources/*.jade',
+    watch: './resources/*.jade',
     destination: './public/',
     revision: './public/**/*.html'
   },
   styles: {
-    source: './src/style.styl',
-    watch: './src/**/*.styl',
+    source: './resources/style.styl',
+    watch: './resources/**/*.styl',
     destination: './public/css/'
   },
   assets: {
-    source: './src/assets/**/*.*',
-    watch: './src/assets/**/*.*',
+    source: './resources/assets/**/*.*',
+    watch: './resources/assets/**/*.*',
     destination: './public/'
   },
   revision: {
