@@ -27,10 +27,10 @@ var watch = require('gulp-watch');
 var production = process.env.NODE_ENV === 'production';
 
 var config = {
-  source: './resources',
+  source: '/resources/',
   destination: './public',
   scripts: {
-    source: './resources/main.js',
+    source: './resources/js/main.js',
     destination: './public/js/',
     extensions: ['.jsx'],
     filename: 'bundle.js'
@@ -42,7 +42,7 @@ var config = {
     revision: './public/**/*.html'
   },
   styles: {
-    source: './resources/style.styl',
+    source: './resources/style/style.styl',
     watch: './resources/**/*.styl',
     destination: './public/css/'
   },

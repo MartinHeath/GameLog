@@ -1,5 +1,5 @@
 {
-  "name": "gulp-template",
+  "name": "GameLog",
   "version": "1.0.0",
   "description": "Project template for gulp.js",
   "author": "Riku Rouvila <riku.rouvila@leonidasoy.fi>",
@@ -11,11 +11,15 @@
     "test": "mocha src/**/__tests__/*.js --compilers js:babel/register --require test/test-helper"
   },
   "keywords": [
-    "gulp",
-    "template"
+    "backlog",
+    "game library"
   ],
   "dependencies": {
     "lodash": "^3.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MartinHeath/GameLog.git"
   },
   "devDependencies": {
     "babel": "^5.6.14",
