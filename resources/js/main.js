@@ -4,3 +4,4 @@ import { default as React } from 'react';
 import { Button} from '../components/button';
 
 React.render(<Button />, document.getElementById('but'));
+React.render(<ProgressBar />, document.getElementById('but'));

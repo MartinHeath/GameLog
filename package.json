@@ -15,6 +15,7 @@
     "game library"
   ],
   "dependencies": {
+    "bootstrap": "^3.3.5",
     "classnames": "^2.1.5",
     "lodash": "^3.9.1",
     "react": "^0.14.0",
