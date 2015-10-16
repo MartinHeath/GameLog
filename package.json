@@ -15,7 +15,11 @@
     "game library"
   ],
   "dependencies": {
-    "lodash": "^3.9.1"
+    "classnames": "^2.1.5",
+    "lodash": "^3.9.1",
+    "react": "^0.14.0",
+    "react-bootstrap": "^0.27.1",
+    "react-router": "^1.0.0-rc3"
   },
   "repository": {
     "type": "git",
@@ -50,7 +54,12 @@
   },
   "browserify": {
     "transform": [
-      ["babelify", {"stage": 0}]
+      [
+        "babelify",
+        {
+          "stage": 0
+        }
+      ]
     ]
   }
 }

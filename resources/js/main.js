@@ -1,9 +1,6 @@
 'use strict';
 
-import {getCommits, getRepo} from '../services/github';
-import {render} from '../components/repository';
+import { default as React } from 'react';
+import { Button} from '../components/button';
 
-Promise.all([getRepo(), getCommits()])
-.then(([repository, commits]) => {
-  document.body.innerHTML = render(repository, commits);
-});
+React.render(<Button />, document.getElementById('but'));

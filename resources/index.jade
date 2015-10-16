@@ -1,8 +1,14 @@
 doctype html
 html
   head
-    title Gulp template
+    title GameLog
     link(rel='stylesheet', href='css/style.css')
   body
-    h1 Hello world!
-    script(src='js/bundle.js')
+   #app
+    h1 GAMELOG
+
+    #but
+    p Welcome. Here thou shalt find things. Eventually.
+
+
+    React.render(<Button />, document.getElementById(‘app'))

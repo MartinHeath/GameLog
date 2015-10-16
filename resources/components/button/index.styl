@@ -1,0 +1,28 @@
+/*
+ * Button
+ */
+
+.btn
+  border 0
+  padding 1em 1.5em
+  font-size 1rem
+  font inherit
+  text-align center
+  border-radius 3px
+  cursor pointer
+  display inline-block
+  text-decoration none
+
+.btn--warning
+  background warningColor
+  color #fff
+
+.btn--primary
+  background primaryColor
+  color #fff
+
+  &:hover
+    background darken(primaryColor, 5)
+
+.btn--active
+  background darken(primaryColor, 10)

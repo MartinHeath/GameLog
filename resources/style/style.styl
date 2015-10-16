@@ -1,23 +1,25 @@
 body, html
-  background-color #E6E6FA
+  background-color #0B0B0B
   margin 0
   padding 1em
   font 14px/1.4 'Helvetica Neue', Helvetica, Arial
   color  #FF6F00
 
-#mainView
+#app
+  margin-left 8%
+  margin-right 8%
+  text-align center
+  background-color #1A1A1A
 
- margin-left 8%
- margin-right 8%
- text-align center
- background-color black
-
- h1
-  background-color #000080
-  border-style dotted
-  border-width 5px
-  font-size 100px
-  float center
+  h1
+   background -webkit-linear-gradient(left top, #303030, #080808) /* For Safari 5.1 to 6.0 */
+   background -o-linear-gradient(bottom right, #303030, #080808) /* For Opera 11.1 to 12.0 */
+   background -moz-linear-gradient(bottom right, #303030, #080808) /* For Firefox 3.6 to 15 */
+   background linear-gradient(to bottom right, #303030, #080808) /* Standard syntax */
+   border-style dotted
+   border-width 5px
+   font-size 100px
+   float center
 
 @import '../components/repository'
 // @import 'bootstrap/dist/css/bootstrap.css'
