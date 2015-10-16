@@ -33,7 +33,7 @@ var config = {
     source: './resources/js/main.js',
     destination: './public/js/',
     extensions: ['.jsx'],
-    filename: 'bundle.js'
+    filename: 'main.js'
   },
   templates: {
     source: './resources/*.jade',

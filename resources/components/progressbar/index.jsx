@@ -6,7 +6,8 @@ export default React.createClass({
     var currPros= 22;
     return (
       <div className="progressbar">
-        <ProgressBar  label='%(percent)s%' bsStyle='info' now={currPros}/>
+        <ProgressBar bsStyle='warning' now={currPros}/>
       </div>
+    );
   }
 });

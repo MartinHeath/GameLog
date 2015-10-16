@@ -1,7 +1,6 @@
-'use strict';
-
 import { default as React } from 'react';
-import { Button} from '../components/button';
+import { default as Button } from '../components/button';
+import { default as ButtonMenu } from '../components/buttonMenu';
+import { default as MainView } from '../components/mainView';
 
-React.render(<Button />, document.getElementById('but'));
-React.render(<ProgressBar />, document.getElementById('but'));
+React.render(<MainView />, document.getElementById('mainView'));
