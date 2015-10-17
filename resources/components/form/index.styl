@@ -1,8 +1,56 @@
 .form
+  display block
+  height 60%
+  width 60%
+  margin-left 18%
+  margin-right 10%
+  font-size 20px
+
   input[type="text"]
-    width 100%
+    width 30%
     height 2em
-  label
-    margin-top 1em
-    font-size 0.9em
-    display block
+    color black
+
+  input[type="number"]
+    color black
+
+  input[type="file"]
+    display inline-block
+
+  input[type="radio"]
+    margin 10px
+
+  .btn
+    margin 5px
+    margin-top -1.5px
+    background-color white
+    color black
+    border 0
+    padding 1em 1.5em
+    font-size 2rem
+    font inherit
+    text-align center
+    border-radius 3px
+    cursor pointer
+    display inline-block
+    text-decoration none
+    width 20%
+
+    &:hover
+      background darken(#FF6F00, 15)
+
+  input[type="submit"]
+    color black
+    border 0
+    padding 1em 1.5em
+    font-size 2rem
+    font inherit
+    text-align center
+    border-radius 3px
+    cursor pointer
+    display inline-block
+    text-decoration none
+    width 20%
+
+    &:hover
+      background darken(#FF6F00, 15)

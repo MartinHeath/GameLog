@@ -8,7 +8,6 @@ export default React.createClass({
     console.log("asd");
     return (
       <div className="wrapper">
-        <ProgressBar />
         <ButtonMenu />
         <p> Welcome. Please choose wisely, for a wrong choice can lead to thy
           doom.
