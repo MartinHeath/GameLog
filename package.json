@@ -17,9 +17,11 @@
   "dependencies": {
     "bootstrap": "^3.3.5",
     "classnames": "^2.1.5",
+    "knex": "^0.8.6",
     "lodash": "^3.9.1",
     "react": "^0.14.0",
     "react-bootstrap": "^0.27.1",
+    "react-dom": "^0.14.0",
     "react-router": "^1.0.0-rc3"
   },
   "repository": {

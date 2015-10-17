@@ -3,10 +3,15 @@ import { ProgressBar } from 'react-bootstrap';
 
 export default React.createClass({
   render(){
-    var currPros= 22;
+    var currPros= 42;
+    var complete = 22;
+    var givUp= 20;
+    var notPlayed = 68;
+    var progBar = <ProgressBar bsStyle='warning' now={currPros} onDoubleClick={this.detail()} />
+   function detail(){};
     return (
       <div className="progressbar">
-        <ProgressBar bsStyle='warning' now={currPros}/>
+        {progBar}
       </div>
     );
   }

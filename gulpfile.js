@@ -35,6 +35,12 @@ var config = {
     extensions: ['.jsx'],
     filename: 'main.js'
   },
+  script2:{
+    source: './resources/js/dropzone.js',
+    destination: './public/js/',
+    extensions: ['.jsx'],
+    filename: 'dropzone.js'
+  },
   templates: {
     source: './resources/*.jade',
     watch: './resources/*.jade',

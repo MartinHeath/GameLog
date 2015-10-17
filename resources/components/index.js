@@ -1,10 +1,11 @@
-import { default as Button } from 'components/button';
-import { default as ProgressBar } from 'components/button';
-import { default as ButtonMenu} from 'components/buttonMenu';
-import { default as IconButton } from 'components/icon-button';
-import { default as Form } from 'components/form';
-import { default as MainView } from 'components/mainView';
-import { default as EditView } fomr 'components/editView';
+import { default as Button } from '/button';
+import { default as ProgressBar } from '/button';
+import { default as ButtonMenu} from '/buttonMenu';
+import { default as IconButton } from '/icon-button';
+import { default as Form } from '/form';
+import { default as MainView } from '/mainView';
+import { default as EditView } from '/editView';
+import { default as InfoView } from '/infoView'
 
 export {
   Button as Button,
@@ -13,5 +14,6 @@ export {
   IconButton as IconButton,
   Form as Form,
   MainView as Mainview,
-  EditView as EditView
+  EditView as EditView,
+  InfoView as InfoView
 };
