@@ -122,7 +122,7 @@ export default React.createClass({
         <section>
           <div className="controls">
             <Button className="exit"> Cancel </Button>
-            <input type="submit" value="Save" />
+            <Button type="submit"> Save </Button>
           </div>
         </section>
       </Form>
