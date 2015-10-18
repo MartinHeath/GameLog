@@ -8,7 +8,9 @@ export default React.createClass({
         <p> This is a personal project by me, Martin.
           The idea was spawned when I was looking at my collection of games, trying to figure out what to play.
           I Realise there are other services LIKE this, but I have yet to see one utilize React.js in the same way.
-        </p> 
+        </p>
+
+        <h3> Special thanks to Riku Ruovila and Marko Rantala for help in coding and design respectfully.
       </div>
     );
   }

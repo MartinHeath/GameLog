@@ -4,6 +4,8 @@ import { default as Button } from '../button';
 import { default as RadioGroup } from 'react-radio-group';
 import { default as LinkedStateMixin } from 'react-addons-linked-state-mixin'
 
+import { default as ProgressBar } from '../progressbar';
+
 export default React.createClass({
   mixins: [LinkedStateMixin],
   getInitialState(){
@@ -15,8 +17,12 @@ export default React.createClass({
       system: "",
       platform: "",
       completion: "",
+      review: "",
+      dlc: "",
+      tags: "",
       isPC: "hide",
-      isConsole: "hide"
+      isConsole: "hide",
+      isComplete: "hide"
     };
   },
   handleHidden: function(value){
@@ -37,6 +43,21 @@ export default React.createClass({
       system: value
     });
   },
+  handleComplete: function(value){
+    if(value != "notComplete"){
+      this.setState({
+        isComplete: "seen"
+      });
+    }
+    else {
+      this.setState({
+        isComplete: "hidden"
+      });
+    }
+    this.setState({
+      complete:value
+    });
+  },
   handleChangePlatform: function(value) {
     this.setState({
       platform: value,
@@ -47,9 +68,18 @@ export default React.createClass({
       system: value,
     });
   },
+  handleChangeCompletion: function(value){
+    this.setState({
+      completion: value
+    });
+  },
+  onSubmit: function(){
+    console.log("asd");
+  },
   render(){
     return(
       <Form onSubmit={this.onSubmit} >
+        <ProgressBar />
         <section>
           <div className="basic_inf">
             <h3>Please enter basic game info</h3>
@@ -108,7 +138,7 @@ export default React.createClass({
           <div className="comp">
             <h3>Is the game complete, given up or not complete / not played?</h3>
             <br/>
-            <RadioGroup name="platform_pc" selectedValue={this.state.platform} onChange={this.handleChangePlatform}>
+            <RadioGroup name="platform_pc" selectedValue={this.state.complete} onChange={this.handleChangeCompletion} onChange={this.handleComplete}>
               {Radio => (
                 <div>
                   <Radio value="complete" /> Complete
@@ -117,12 +147,23 @@ export default React.createClass({
                 </div>
               )}
             </RadioGroup>
+            <div className="comp_add" id={this.state.isComplete}>
+              <h3>Please add a short review, tags for the game and any relevant story-dlc you have completed</h3>
+              <label>Review:</label>
+              <input type="text" valueLink={this.linkState('review')} maxLength="50"/>
+              <br/>
+              <label>DLC:</label>
+              <input type="text" valueLink={this.linkState('dlc')}  maxLength="50"/>
+              <br/>
+              <label>Tags:</label>
+              <input type="text" valueLink={this.linkState('tags')} maxLength="20"/>
+            </div>
           </div>
         </section>
         <section>
           <div className="controls">
             <Button className="exit"> Cancel </Button>
-            <Button type="submit"> Save </Button>
+            <input type="submit" value="save"/>
           </div>
         </section>
       </Form>

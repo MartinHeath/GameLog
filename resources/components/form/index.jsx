@@ -5,7 +5,9 @@ export default React.createClass({
     <form onSubmit={this.props.onSubmit} />
     return (
       <div className="form">
-        {this.props.children}
+        <form>
+          {this.props.children}
+        </form>
       </div>
     )
   }
